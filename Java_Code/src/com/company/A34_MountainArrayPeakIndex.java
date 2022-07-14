@@ -1,22 +1,26 @@
 package com.company;
 
-//Q: (Q-852--LeetCode)--Find peak in mountain array
+//Q: (Q-852/Q:162--LeetCode)--Find peak in mountain array
+//It is sorted but 1st half is sorted in ascending and 2nd half is sorted in descending.
 public class A34_MountainArrayPeakIndex {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,8,9,45,3,2,5,7,99,120};
-        System.out.println(find(arr));
+        int[] arr = {3,4,8,9,45,50,41,37,29,19,12};
+        int ans = find(arr);
+        System.out.println(arr[ans]);
     }
     static int find(int[] arr) {
         int start = 0;
-        int end = arr.length -1;
+        int end = arr.length - 1;
 
-        for (int row = 0; row < end; row++) {
-            int big = Integer.MIN_VALUE;
-            if (arr[row]>big) {
-                big = arr[row];
-            }
-            return big;
+
+        while(start < end) {
+            int mid = start + (end-start)/2;
+             if (arr[mid] > arr[mid+1]) {
+                end = mid;
+            }else {
+                start = mid+1;
+            };
         }
-        return -1;
+        return start;
     }
 }

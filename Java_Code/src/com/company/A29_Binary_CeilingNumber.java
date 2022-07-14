@@ -1,5 +1,6 @@
 package com.company;
 //Q: Find Ceiling; Ceiling = number greater or equal to target.
+
 public class A29_Binary_CeilingNumber {
     public static void main(String[] args) {
         int[] arr = {2,4,6,8,10,12,14};
@@ -9,24 +10,32 @@ public class A29_Binary_CeilingNumber {
     }
 
     //My code using Binary loop
-
     static int ceiling(int[] arr, int target) {
+
+        //what if target is greater than the greatest number of array
+        if (target > arr[arr.length - 1]) {
+            return -1;
+        }
         int start = 0;
         int end = arr.length -1;
-        int mid = start + (end - start)/2;
+
 
         while (start <= end) {
-            if (target == arr[mid]) {
+            int mid = start + (end-start)/2;
+
+            if (arr[mid] == target) {
                 return mid;
             }
             if (target < arr[mid]) {
-                end = mid - 1;
-            } else {
+                end = mid - 1 ;
+            } else  {
                 start = mid + 1;
             }
-            return arr[start];
+
         }
-        return arr[start];
+        return start;
+        //we are returning start because if you calculate while loop on paper you will find that at the end (if target = 11) then start = 12, end = 10;
+        // start becomes greater than end and while loop breaks.
     }
 
 //    //My Code using for loop

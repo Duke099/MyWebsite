@@ -21,7 +21,7 @@ public class A02_Switch_1 {
 
 
 
-//        Doing is program with switch
+//       // Doing this program with switch
 
 //        switch (fruit) {
 //            case "MANGO":
@@ -38,23 +38,6 @@ public class A02_Switch_1 {
 //
 //
 //        }
-
-//        Below is the example of how to do the switch program in if & else
-
-//        String MF = ("Mango");
-//        while (true) {
-//            String fruit = in.next().toUpperCase();
-//            if (fruit.equals(MF.toUpperCase())) { // Here .equals() replaces [==]; for eg:- fruit == MF; is replaced by fruit.equals(MF) // .toUppercase has made MF into uppercase
-//                System.out.println("Matched");
-//
-//            }
-//            if ( fruit.equals("X") )  {
-//                System.out.println("You have ended the program");
-//
-//                break;
-//            }
-//            else System.out.println("Not Matched");
-
 
     }
 }

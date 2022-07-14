@@ -5,6 +5,7 @@ package com.company;
 
 import java.util.Arrays;
 //Only for single digits
+
 public class B09_DuplicatedNumber {
     public static void main(String[] args) {
         int[] arr = {2,3,1,2,2,2,2,2,2,2};

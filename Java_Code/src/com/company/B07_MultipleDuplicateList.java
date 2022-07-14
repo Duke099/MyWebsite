@@ -1,6 +1,6 @@
 package com.company;
 
-//Q:(3 - Video - 20) (287 - Leetcode)
+//Q:(3 - Video - 20) (442 - Leetcode)
 
 import java.util.ArrayList;
 import java.util.Arrays;

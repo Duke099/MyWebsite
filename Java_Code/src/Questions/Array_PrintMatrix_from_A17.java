@@ -3,7 +3,7 @@ package Questions;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class PrintMatrix_from_A17 {
+public class Array_PrintMatrix_from_A17 {
     public static void main(String[] args) {
         /*
         1 2 3

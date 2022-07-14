@@ -12,6 +12,7 @@ import java.util.Scanner;
 
 public class A05_Functions_1 {
     public static void main(String[] args) {
+
         sum();
     }
     static void sum() {

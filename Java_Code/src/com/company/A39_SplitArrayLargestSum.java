@@ -5,7 +5,8 @@ package com.company;
 public class A39_SplitArrayLargestSum {
     public static void main(String[] args) {
         int [] arr = {7,2,5,10,8};
-        int ans = splitarray(arr);
+        int m = 2;
+        int ans = splitarray(arr, m);
         System.out.println(ans);
     }
     
@@ -29,7 +30,7 @@ public class A39_SplitArrayLargestSum {
                     sum = num;
                     pieces++;
                 } else {
-                    start += num;
+                    sum += num;
                 }
             }
             if (pieces > m) {

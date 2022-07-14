@@ -1,7 +1,8 @@
 package Questions;
 // How many times the particular number accur.
+import java.util.Scanner;
 
-public class A1_CountNums {
+public class CountNums {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();

@@ -1,6 +1,6 @@
 package Questions;
 
-public class MaxItem_Array {
+public class Array_MaxItem {
         public static void main(String[] args) {
             int[] arr = {1, 5, 10, 15, 25};
             System.out.println(max(arr));
